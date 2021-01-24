@@ -728,6 +728,9 @@ html {
   .offset-md-11 {
     margin-left: 91.666667%;
   }
+  .offset-md-12 {
+    margin-left: 100%;
+  }
 }
 
 @media (min-width: 992px) {
@@ -3868,5 +3871,12 @@ html {
   .mx-xl-auto {
     margin-left: auto !important;
   }
+}
+
+.center {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
 }
 /*# sourceMappingURL=bootstrap-grid.css.map */

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+	<title>Login/Sign Up</title>
+	<meta content="" name="description">
+	<meta content="" name="keywords">
+
+	<link rel="stylesheet" href="account.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+	<!-- <header id="header" class="fixed-top ">
+		<div class="container d-flex align-items-center"> -->
+
+			<!-- <h1 class="logo mr-auto"><a href="index.html">Ambiance</a></h1> -->
+			<!-- Uncomment below if you prefer to use an image logo -->
+			<!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/ambiance-logo.png" alt="" class="img-fluid"></a>
+
+		</div>
+	</header>End Header -->
+
+  <script>
+
+    var script_url ="https://script.google.com/macros/s/AKfycbzLYfIgqFZKIV_RDNE7edVO2XqDGoq_AxAPKXpDdVe_/dev";
+    var emailcheck=false;
+    // Make an AJAX call to Google Script
+    function insert_value() {
+
+    var name= $("#name").val();
+    var email= $("#email").val();
+    var subject= $("#subject").val();
+    var message= $("#message").val();
+    var url = script_url+"?callback=ctrlq&message="+message+"&subject="+subject+"&email="+email+"&name="+name+"&action=insert"; 
+      var request = jQuery.ajax({
+        crossDomain: true,
+        url: url ,
+        method: "GET",
+        dataType: "jsonp"
+      });
+    }
+
+  </script>
+
+  <div class="hero">
+    <div class="form-box">
+      <div class="button-box">
+        <div id="btn"></div>
+        <button type="button" class="toggle-btn" onclick="login()">Login</button>
+        <button type="button" class="toggle-btn" onclick="signup()">Sign up</button>
+      </div>
+      <form id="login" class="input-group">
+        <input type="email" class="input-field" name="email" placeholder="Email" required>
+        <input type="text" class="input-field" name="password" placeholder="Password" required>
+        <input type="checkbox" class="checkbox"><span>Remember password</span>
+        <button type="submit" class="submit-btn">Login</button>
+      </form>
+      <form id="sign-up" class="input-group">
+        <input type="email" class="input-field" name="email" placeholder="Email" required>
+        <input type="text" class="input-field" name="password" placeholder="Password" required>
+        <button type="submit" class="submit-btn" onclick="SubForm()">Sign up</button>
+      </form>
+    </div>
+
+    <script>
+      var x = document.getElementById("login");
+      var y = document.getElementById("sign-up");
+      var z = document.getElementById("btn");
+
+      function signup() {
+        x.style.left = "-400px";
+        y.style.left = "50px";
+        z.style.left = "110px";
+      }
+
+      function login() {
+        x.style.left = "50px";
+        y.style.left = "450px";
+        z.style.left = "0";
+      }
+    </script>
+
+  </div>
+
+</body>
+
+</html>
