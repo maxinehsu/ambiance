@@ -620,7 +620,25 @@ h1, h2, h3, h4, h5, h6 {
   color: #ffffff 
 }
 
-#
+#main .create-list {
+ background-color:#CBA2FF;
+ border: none;
+  color: #CBA2FF;
+  padding: 20px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  cursor: pointer;
+  left: 540px;
+  border-radius: 12px;
+  border-color: #CBA2FF;
+  position: absolute;
+  top: 220%;
+  -ms-transform: translateY(-70%);
+  transform: translateY(-50%);
+}
 
 #hero .btn-get-started {
   font-family: "Jost", sans-serif;
