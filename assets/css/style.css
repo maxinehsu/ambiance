@@ -544,7 +544,7 @@ h1, h2, h3, h4, h5, h6 {
 
 #hero .Himage {
   position: relative;
-  top: -2px;
+  top: -5px;
   margin-right: 400px;  
 }
 
@@ -565,6 +565,9 @@ h1, h2, h3, h4, h5, h6 {
 
 #main .Start .img {
   padding-top: 40px;
+  align-items: center;
+  top: -5px;
+  margin-right: 400px;  
 }
 
 #main .create-journal {
@@ -578,13 +581,23 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 16px;
   margin: 4px 2px;
   cursor: pointer;
-  left: 540px;
+  left: 520px;
   border-radius: 12px;
   border-color: #CBA2FF;
   position: absolute;
-  top: 220%;
+  top: 180%;
   -ms-transform: translateY(-70%);
   transform: translateY(-50%);
+}
+
+#main .test {
+  height: 700px; 
+}
+
+#main .test .img {
+  top:200px; 
+  margin-right: 400px;
+  
 }
 
 #hero .Activities h1 {
